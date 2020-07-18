@@ -7,14 +7,14 @@
                 <datadir zip="true">http://raw.github.com/eliransapir/Repo-Sdarot/master/zip</datadir>
         </extension>
         <extension point="xbmc.addon.metadata">
-                <summary>Sdarot.Tv Repository</summary>
-                <description>Sdarot.Tv Repository</description>
+                <summary>Sdarot.Tv Eliran Repository</summary>
+                <description>Sdarot.Tv Eliran Repository</description>
                 <disclaimer></disclaimer>
                 <platform>all</platform>
         </extension>
 </addon>
 
-<addon id="plugin.video.sdarot.tv" name="Sdarot.Tv" version="2.5.9" provider-name="Sdarot">
+<addon id="plugin.video.sdarot.tv" name="Sdarot.Tv2" version="2.6" provider-name="Sdarot">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.xbmcswift2" version="2.4.0"/>
