@@ -159,7 +159,7 @@ def get_final_video_and_cookie(sid, season, episode, choose_quality=False, downl
     if not cookie:
         cookie = req.cookies.get_dict()
 
-    if token == 'donor':
+    if token != 'donor':
         vid = get_video_url(sid, season, episode, token, cookie, choose_quality)
 
     else:
@@ -167,17 +167,8 @@ def get_final_video_and_cookie(sid, season, episode, choose_quality=False, downl
             plugin.notify('התחבר כמנוי כדי להוריד פרק זה', image=ICON)
             return None, None
         else:
-            dp = xbmcgui.DialogProgress()
-            dp.create("לצפייה באיכות HD וללא המתנה ניתן לרכוש מנוי", "אנא המתן 30 שניות", '',
-                      "[COLOR orange][B]לרכישת מנוי להיכנס בדפדפן - www.sdarot.tv/donate[/B][/COLOR]")
-            dp.update(0)
-            for s in range(30, -1, -1):
-                time.sleep(1)
-                dp.update(int((30 - s) / 30.0 * 100), "אנא המתן 30 שניות", 'עוד {0} שניות'.format(s), '')
-                if dp.iscanceled():
-                    dp.close()
-                    return None, None
-
+            return None, None
+        
         vid = get_video_url(sid, season, episode, token, cookie, choose_quality)
 
     if vid:
