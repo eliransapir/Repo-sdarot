@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 <addon id="repository.sdarot" name="[COLOR white][B]Sdarot[/B][/COLOR][COLOR white][B].Tv[/B][/COLOR] [COLOR white][B]Repo[/B][/COLOR]" version="1.0.3" provider-name="Sdarot">
-        <extension point="xbmc.addon.repository" name="Sdarot Repository">
+        <extension point="xbmc.addon.repository" name="Sdarot Eli Repository">
                 <info compressed="false">http://raw.github.com/eliransapir/Repo-Sdarot/master/addons.xml</info>
                 <checksum>http://raw.github.com/eliransapir/Repo-Sdarot/master/addons.xml.md5</checksum>
                 <datadir zip="true">http://raw.github.com/eliransapir/Repo-Sdarot/master/zip</datadir>
         </extension>
         <extension point="xbmc.addon.metadata">
-                <summary>Sdarot.Tv Eliran Repository</summary>
-                <description>Sdarot.Tv Eliran Repository</description>
+                <summary>Sdarot.Tv Eli Repository</summary>
+                <description>Sdarot.Tv Eli Repository</description>
                 <disclaimer></disclaimer>
                 <platform>all</platform>
         </extension>
 </addon>
 
-<addon id="plugin.video.sdarot.tv" name="Sdarot.Tv2" version="2.6" provider-name="Sdarot">
+<addon id="plugin.video.sdarot.tv" name="Sdarot.Tv3" version="2.7" provider-name="Sdarot">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.xbmcswift2" version="2.4.0"/>
